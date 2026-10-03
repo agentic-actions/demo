@@ -1,0 +1,140 @@
+{
+    "actions": {
+        "complete-task": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Tasks\\CompleteTask",
+            "effect": "write",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": false
+        },
+        "completed-per-day": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Reports\\CompletedPerDay",
+            "effect": "read",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "completion-stats": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Reports\\CompletionStats",
+            "effect": "read",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "create-project": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Projects\\CreateProject",
+            "effect": "write",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "create-task": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Tasks\\CreateTask",
+            "effect": "write",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "delete-task": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Tasks\\DeleteTask",
+            "effect": "destructive",
+            "mcp": false,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "list-tasks": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Tasks\\ListTasks",
+            "effect": "read",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "search-tasks": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Tasks\\SearchTasks",
+            "effect": "read",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "summarize-board": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Tasks\\SummarizeBoard",
+            "effect": "read",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "task-stats": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Reports\\TaskStats",
+            "effect": "read",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "tasks-by-assignee": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Reports\\TasksByAssignee",
+            "effect": "read",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "tasks-by-status": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Reports\\TasksByStatus",
+            "effect": "read",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        },
+        "update-task": {
+            "agents": [
+                "default"
+            ],
+            "class": "App\\Actions\\Tasks\\UpdateTask",
+            "effect": "write",
+            "mcp": true,
+            "tenant_scoped": true,
+            "web": true
+        }
+    },
+    "agents": {
+        "App\\Ai\\Agents\\BoardAssistant": [
+            "default"
+        ]
+    },
+    "version": 1
+}
