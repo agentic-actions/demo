@@ -158,6 +158,8 @@ it('allows 120 sandboxes an hour in all', function () {
 it('holds one address to five an hour even when a burst gets past the limiter', function () {
     // Requests sent at once all pass the limiter's check before any adds to its count; without it, this is what each sees.
     $this->withoutMiddleware(ThrottleRequests::class);
+    // Retry-After counts down from the first sandbox's start, so a second ticking over mid-test would read 3599.
+    $this->freezeTime();
 
     foreach (range(1, 5) as $attempt) {
         $this->post(route('demo.store'))->assertRedirect();
