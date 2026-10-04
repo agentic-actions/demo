@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "agentic-actions/laravel",
-            "version": "v0.9.0-beta.2",
+            "version": "v0.9.0-beta.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agentic-actions/laravel.git",
-                "reference": "8862bc1407fcfdffda1daa408a3b8fc49b4419f3"
+                "reference": "e678fb1ec7bc69d0480f0f16b4d7d7a577128994"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agentic-actions/laravel/zipball/8862bc1407fcfdffda1daa408a3b8fc49b4419f3",
-                "reference": "8862bc1407fcfdffda1daa408a3b8fc49b4419f3",
+                "url": "https://api.github.com/repos/agentic-actions/laravel/zipball/e678fb1ec7bc69d0480f0f16b4d7d7a577128994",
+                "reference": "e678fb1ec7bc69d0480f0f16b4d7d7a577128994",
                 "shasum": ""
             },
             "require": {
@@ -93,7 +93,7 @@
                 "security": "https://github.com/agentic-actions/laravel/security/policy",
                 "source": "https://github.com/agentic-actions/laravel"
             },
-            "time": "2026-10-03T11:53:07+00:00"
+            "time": "2026-10-04T10:19:56+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
