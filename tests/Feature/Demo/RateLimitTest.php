@@ -207,6 +207,9 @@ describe('the hosted demo', function () {
     });
 
     it('stops a sixth sandbox from one address, and the same address can still use a resume link', function () {
+        // Retry-After counts down from the first sandbox's start, so a second ticking over mid-test would read 3599.
+        $this->freezeTime();
+
         foreach (range(1, 5) as $attempt) {
             $this->post(route('demo.store'))->assertRedirect();
         }
